@@ -1,10 +1,12 @@
 import SwiftUI
+import Kingfisher
 
 struct EventDetailView: View {
     let event: AstronomicalEvent
 
     @State private var notified = false
     @State private var showAddObservation = false
+    @State private var heroImageFailed = false
 
     var body: some View {
         ScrollView {
@@ -30,7 +32,28 @@ struct EventDetailView: View {
         }
     }
 
+    /// Remote NASA photo for this event type, downloaded and disk-cached by
+    /// Kingfisher. While it loads - or if it never arrives - the original
+    /// gradient + symbol is shown instead, so the layout never breaks.
     private var hero: some View {
+        ZStack {
+            if heroImageFailed {
+                heroFallback
+            } else {
+                KFImage(event.type.imageURL)
+                    .placeholder { heroFallback }
+                    .retry(maxCount: 2, interval: .seconds(2))
+                    .onFailure { _ in heroImageFailed = true }
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+            }
+        }
+        .frame(height: 220)
+        .clipShape(RoundedRectangle(cornerRadius: 20))
+    }
+
+    /// The look the hero had before Kingfisher - reused as placeholder and error state.
+    private var heroFallback: some View {
         ZStack {
             LinearGradient(
                 colors: [event.type.color.opacity(0.6), ColorTheme.surface],
@@ -42,8 +65,6 @@ struct EventDetailView: View {
                 .foregroundStyle(.white)
                 .shadow(color: event.type.color, radius: 30)
         }
-        .frame(height: 220)
-        .clipShape(RoundedRectangle(cornerRadius: 20))
     }
 
     private var titleBlock: some View {

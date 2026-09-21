@@ -32,6 +32,23 @@ enum AstronomicalEventType: String, Codable, CaseIterable, Identifiable {
         }
     }
 
+    /// Remote illustration for the event, loaded and cached by Kingfisher.
+    /// Source: NASA public image library (no API key required).
+    var imageURL: URL? {
+        let nasaID: String
+        switch self {
+        case .fullMoon: nasaID = "KSC-20240819-PH-JBS01_0012"
+        case .newMoon: nasaID = "PIA17416"
+        case .meteorShower: nasaID = "NHQ202108110003"
+        case .lunarEclipse: nasaID = "201012210001HQ"
+        case .solarEclipse: nasaID = "NHQ201708210116"
+        case .conjunction: nasaID = "NHQ202012170001"
+        case .issPass: nasaID = "iss074e0089785"
+        case .other: nasaID = "iss073e0982823"
+        }
+        return URL(string: "https://images-assets.nasa.gov/image/\(nasaID)/\(nasaID)~medium.jpg")
+    }
+
     var icon: String {
         switch self {
         case .fullMoon: return "moon.fill"

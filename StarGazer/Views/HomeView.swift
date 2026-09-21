@@ -52,6 +52,9 @@ struct HomeView: View {
                     .ignoresSafeArea(edges: .top)
             }
             .ignoresSafeArea(edges: .top)
+            // HomeView draws its own floating header; the empty system bar would
+            // otherwise sit on top of it and hide the calendar/stats buttons.
+            .toolbar(.hidden, for: .navigationBar)
         }
         .task {
             await vm.loadAll()

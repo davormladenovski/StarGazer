@@ -80,8 +80,10 @@ This document maps each project requirement to its implementing file(s). It will
 
 | Library | Purpose | Where |
 |---|---|---|
-| Kingfisher | Async image loading/caching | ObservationLogView (Phase 2) |
-| StarryNight | Star catalog (or CSV fallback) | StarCatalogService (Phase 4) |
+| Kingfisher | Async loading + disk caching of the remote NASA event photo | EventDetailView (`hero`) |
+
+StarryNight is **not** used: the star catalog is parsed from the bundled
+`yale_bright_star_catalog.csv` by `StarCatalogService`.
 
 ## Required permissions (Info.plist)
 

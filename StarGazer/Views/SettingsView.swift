@@ -170,7 +170,7 @@ struct SettingsView: View {
                 .padding(.horizontal, 16)
                 .padding(.vertical, 12)
             }
-            Text("Libraries used: Kingfisher, StarryNight")
+            Text("Libraries used: Kingfisher — remote image loading and caching")
                 .font(.caption2)
                 .foregroundStyle(ColorTheme.textSecondary)
                 .frame(maxWidth: .infinity, alignment: .leading)
