@@ -1,0 +1,704 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0945771EC13DD0F1A8781097 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AC281A6ACFC3F167C31172 /* WeatherService.swift */; };
+		0C00DD11E63736CF64DD1647 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22232AC98737556D5547A477 /* RootTabView.swift */; };
+		0FCF0A3B31F272BE8863C763 /* ObjectType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD298A7EAB8E94F00FFA0D2C /* ObjectType.swift */; };
+		1A337AA30DA91EBA1C0DA17F /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1442398952441A2D71B78E7F /* CameraService.swift */; };
+		2627E2567EC12E12CB315241 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7E72999230E8BAF6A774D8 /* Constants.swift */; };
+		2F50D341EFB4D0FD9CA3FDF6 /* BiometricService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D780284088ADFCEA645F211B /* BiometricService.swift */; };
+		3064D5FB5AE76766A5B38DE3 /* EventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECB7359BCDE778FF604EC29 /* EventsViewModel.swift */; };
+		32320003BED3CDD57044BEEA /* sun.png in Resources */ = {isa = PBXBuildFile; fileRef = BFA0A6E0F34C64F20C8C59AA /* sun.png */; };
+		33561E96A086709818057358 /* moon.png in Resources */ = {isa = PBXBuildFile; fileRef = 232002BDC044A8780DE5756B /* moon.png */; };
+		34B67078A32B4AF63AD55588 /* SkyCompassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA96211CB0E43EC24C28586 /* SkyCompassView.swift */; };
+		35F4207262794F50FB4B6960 /* ISSPassesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EF4A1B93A536863D51A4ADA /* ISSPassesViewModel.swift */; };
+		36F7AFFDF86CE5E67A003A12 /* saturn.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D17535530CCBD7A775E9B28 /* saturn.png */; };
+		37CD404CF29AED06039B60F8 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4ADD8FE2D477245F6676624A /* Kingfisher */; };
+		3C29ABE15FF4B45CBE53DCC5 /* mars.png in Resources */ = {isa = PBXBuildFile; fileRef = 69F9EFBCBEE1FBE4D0A4168F /* mars.png */; };
+		40617AF5CD39CACD554BFCD1 /* CelestialMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0604B7F9D397644D645DE531 /* CelestialMath.swift */; };
+		49B2AE1F74E8CC9E876DCBC4 /* AnimatedStarFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C0B1D05B47D5728C86247B /* AnimatedStarFieldView.swift */; };
+		4C3781649F145B8A68588D1E /* ISSPassesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958B101961F6E5C44C835A63 /* ISSPassesView.swift */; };
+		4D81138EF39068F9B3F73E6A /* EventsCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184C993D72FDF4FBEBC68A5C /* EventsCalendarView.swift */; };
+		5126ACF0CCBAAFE50E886D2C /* Observation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65685A73CF7DBD781CF76C63 /* Observation.swift */; };
+		5334116C552755F455303A4C /* yale_bright_star_catalog.csv in Resources */ = {isa = PBXBuildFile; fileRef = 5706A7A5D31694CBF05D0202 /* yale_bright_star_catalog.csv */; };
+		53CF6A548F9C6145F5D1C307 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FA7195A2B1CADBC09E6399 /* SettingsManager.swift */; };
+		550354BF87C6F46E80B94F3E /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = B81CADF5635608C7C0289711 /* splash.png */; };
+		559D641791F6C9D4EA146A9D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC366BD1755D35C1B0C1512C /* Extensions.swift */; };
+		56020962BC62A8D1BB3A962D /* NewObservationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C2BB85DE07E4C23AB59D77 /* NewObservationView.swift */; };
+		5E5E62420995E8D0E79C2347 /* jupiter.png in Resources */ = {isa = PBXBuildFile; fileRef = FD1F914AF381F6D742409AF3 /* jupiter.png */; };
+		607BDA48806EAFBB86624EF7 /* CelestialBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D7F9997812C8E9655A1584 /* CelestialBody.swift */; };
+		66F0827CCCB14705834D20E5 /* APIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82588DA5801775953B9932C3 /* APIModels.swift */; };
+		68057ED454219E1F968729BF /* StatisticsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B589CBD30438E37D762D78 /* StatisticsViewModel.swift */; };
+		6A9859AB546816C87A735683 /* AppLaunchState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82473D191B37C0FF37C932F7 /* AppLaunchState.swift */; };
+		6B06A3D893590FDD967D7206 /* StarCatalogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A0868125D58F39F0C04B08 /* StarCatalogService.swift */; };
+		6FF9A4EC685BF44517215404 /* ISSMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403035C10DE7BF6F5CB16418 /* ISSMapViewModel.swift */; };
+		7406DB1789C18AE243DD8322 /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546D810FF3022B6225032244 /* StatisticsView.swift */; };
+		753DE777F3956EAB1E0D54A4 /* faceid_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 291B459A355A35D5FE25C9D8 /* faceid_screen.png */; };
+		76F097555170B8E8B1028E90 /* SkyCompassViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F168BA3AA4EB662FB242158 /* SkyCompassViewModel.swift */; };
+		7D3B536A78927262EB2CF885 /* PlanetCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EA08C3A6F6CDC80E458EBD /* PlanetCalculator.swift */; };
+		83C812DB897512705F9222F8 /* astronomical_events_2026.json in Resources */ = {isa = PBXBuildFile; fileRef = CD2DB0637D5A135D3A4418D7 /* astronomical_events_2026.json */; };
+		8B6805B9926ADAB445DB2B44 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAA2FF217E681EE74BA637B /* LocationService.swift */; };
+		967BA7AE54DA01F32FD1E511 /* CameraCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E71166CB95CA6BFA7583C5 /* CameraCaptureView.swift */; };
+		979A60C39DFCE8F56A44D470 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55E0AF2CFEB106D26BE9CAF /* NotificationManager.swift */; };
+		99B70C25D33F54559484BAD5 /* EventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E015EB1CB6DD1751990EFB0 /* EventDetailView.swift */; };
+		9A539DA7F891E933EB457E55 /* ISSMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A3D7F04417A5D758B9D916 /* ISSMapView.swift */; };
+		9C42ACF50EC9C66D5EC0B8A8 /* uranus.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FACAF856396D53410495CAF /* uranus.png */; };
+		A83B1F592DEF9DE2D4974B9B /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC01C740A7F21EE32107B9F /* LockView.swift */; };
+		AF757E37E2437F2ECBE5519F /* MotionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A38CE1DDF883538C04CC370 /* MotionService.swift */; };
+		B172F5090E23AC0F17778E1C /* ISSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C676F931FE389253863C8CC /* ISSService.swift */; };
+		BC756EB788D8F063A00C4D8C /* CelestialIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4577F260C15C8843EEBAB44F /* CelestialIcon.swift */; };
+		BCC16BEC2F3E2D6F6736AEF4 /* StarGazerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6FAD533E96E1ECDBAA2351 /* StarGazerApp.swift */; };
+		BD55293702087FE540CB86DC /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6F71A2999B7B65D8512A1A /* Achievement.swift */; };
+		BEA5F7803B2F66C55682061B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97DB7D4DD31C60BA90327BD /* SettingsView.swift */; };
+		C3289A42872F3711B1F27066 /* ISSIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98083A98736BA20EBE0B0FC8 /* ISSIconView.swift */; };
+		C48AD4345B6102E9B8A76DAF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E4F2CF5ED873A6E35B8FF9 /* HomeView.swift */; };
+		C4A75998B5FCC6E926B0E84B /* neptune.png in Resources */ = {isa = PBXBuildFile; fileRef = 9992B0C2A44FBE2D1A69CDC7 /* neptune.png */; };
+		C78437DB48A360FE1253191F /* ObservationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB062B05B326DD6C4F403647 /* ObservationCard.swift */; };
+		C8F6DBA6300A338EDE135273 /* venus.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B4CC9E28C1A9CB32CE55135 /* venus.png */; };
+		C9593657665A0C46A4C4F9AA /* ObservationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D6774387FA2CE7FA66B3DF /* ObservationDetailView.swift */; };
+		CAE071FD0C0927FE40730974 /* AstronomicalEventsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BD01C2224528E1C0E98B31 /* AstronomicalEventsService.swift */; };
+		D0EBF644C45A112E2066C3D1 /* ObservationLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B8371F3D2C6F35F479BC87 /* ObservationLogView.swift */; };
+		D70F488D8CE76EC51CA36B7E /* FallingStarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56667EC99E69BF098086DC85 /* FallingStarsView.swift */; };
+		E1C9C238D5DE82E2D6531C51 /* iss_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D192881D614A48DDE4F5C16 /* iss_icon.png */; };
+		E77D447FCA424BA0613A016A /* MoonPhaseCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99AFF554016DAC102CDA322 /* MoonPhaseCalculator.swift */; };
+		EA71A9D92B8E37E11D0689A6 /* mercury.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DD4369050AC7860DD991296 /* mercury.png */; };
+		EAF10B06180E43F192C54BBA /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E6F809814D201C210B51E5 /* SplashScreenView.swift */; };
+		F7138F2CBA0E72E25482CB24 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFE590356BC15F1E1744544 /* ColorTheme.swift */; };
+		F9D0FB61D67E6CF8C8DBB216 /* SunriseSunsetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB8ED5D5AB48A5999AD5CF8 /* SunriseSunsetService.swift */; };
+		FB3BE7C6D07DDEB2BABDFE30 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CDCD8B383EF70575405285 /* HomeViewModel.swift */; };
+		FB7BB8D10958B51F1287A3F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05A54A1D0EEEA7E62AC912D6 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		05A54A1D0EEEA7E62AC912D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0604B7F9D397644D645DE531 /* CelestialMath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelestialMath.swift; sourceTree = "<group>"; };
+		07C0B1D05B47D5728C86247B /* AnimatedStarFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedStarFieldView.swift; sourceTree = "<group>"; };
+		09E6F809814D201C210B51E5 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		0CA96211CB0E43EC24C28586 /* SkyCompassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyCompassView.swift; sourceTree = "<group>"; };
+		0D17535530CCBD7A775E9B28 /* saturn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = saturn.png; sourceTree = "<group>"; };
+		0F168BA3AA4EB662FB242158 /* SkyCompassViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyCompassViewModel.swift; sourceTree = "<group>"; };
+		11D7F9997812C8E9655A1584 /* CelestialBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelestialBody.swift; sourceTree = "<group>"; };
+		11E4F2CF5ED873A6E35B8FF9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1442398952441A2D71B78E7F /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
+		184C993D72FDF4FBEBC68A5C /* EventsCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsCalendarView.swift; sourceTree = "<group>"; };
+		1A38CE1DDF883538C04CC370 /* MotionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionService.swift; sourceTree = "<group>"; };
+		1A7A8D9C2ACB3A886DE5E5BA /* StarGazer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarGazer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C676F931FE389253863C8CC /* ISSService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSService.swift; sourceTree = "<group>"; };
+		22232AC98737556D5547A477 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+		232002BDC044A8780DE5756B /* moon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moon.png; sourceTree = "<group>"; };
+		24EA08C3A6F6CDC80E458EBD /* PlanetCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetCalculator.swift; sourceTree = "<group>"; };
+		291B459A355A35D5FE25C9D8 /* faceid_screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = faceid_screen.png; sourceTree = "<group>"; };
+		2B6F71A2999B7B65D8512A1A /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
+		2DD4369050AC7860DD991296 /* mercury.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mercury.png; sourceTree = "<group>"; };
+		2FB8ED5D5AB48A5999AD5CF8 /* SunriseSunsetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunriseSunsetService.swift; sourceTree = "<group>"; };
+		3BC01C740A7F21EE32107B9F /* LockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockView.swift; sourceTree = "<group>"; };
+		403035C10DE7BF6F5CB16418 /* ISSMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSMapViewModel.swift; sourceTree = "<group>"; };
+		44BD01C2224528E1C0E98B31 /* AstronomicalEventsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomicalEventsService.swift; sourceTree = "<group>"; };
+		4577F260C15C8843EEBAB44F /* CelestialIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelestialIcon.swift; sourceTree = "<group>"; };
+		4D192881D614A48DDE4F5C16 /* iss_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iss_icon.png; sourceTree = "<group>"; };
+		4FACAF856396D53410495CAF /* uranus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uranus.png; sourceTree = "<group>"; };
+		546D810FF3022B6225032244 /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
+		56667EC99E69BF098086DC85 /* FallingStarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallingStarsView.swift; sourceTree = "<group>"; };
+		56A3D7F04417A5D758B9D916 /* ISSMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSMapView.swift; sourceTree = "<group>"; };
+		5706A7A5D31694CBF05D0202 /* yale_bright_star_catalog.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = yale_bright_star_catalog.csv; sourceTree = "<group>"; };
+		61E71166CB95CA6BFA7583C5 /* CameraCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCaptureView.swift; sourceTree = "<group>"; };
+		630D38E063ECC936D63BA1C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		65685A73CF7DBD781CF76C63 /* Observation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observation.swift; sourceTree = "<group>"; };
+		69F9EFBCBEE1FBE4D0A4168F /* mars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mars.png; sourceTree = "<group>"; };
+		74A0868125D58F39F0C04B08 /* StarCatalogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarCatalogService.swift; sourceTree = "<group>"; };
+		76AC281A6ACFC3F167C31172 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		7B4CC9E28C1A9CB32CE55135 /* venus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = venus.png; sourceTree = "<group>"; };
+		7E015EB1CB6DD1751990EFB0 /* EventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailView.swift; sourceTree = "<group>"; };
+		7EF4A1B93A536863D51A4ADA /* ISSPassesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSPassesViewModel.swift; sourceTree = "<group>"; };
+		80CDCD8B383EF70575405285 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		82473D191B37C0FF37C932F7 /* AppLaunchState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLaunchState.swift; sourceTree = "<group>"; };
+		82588DA5801775953B9932C3 /* APIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModels.swift; sourceTree = "<group>"; };
+		89FA7195A2B1CADBC09E6399 /* SettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
+		8D6FAD533E96E1ECDBAA2351 /* StarGazerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarGazerApp.swift; sourceTree = "<group>"; };
+		8EFE590356BC15F1E1744544 /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
+		93B8371F3D2C6F35F479BC87 /* ObservationLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationLogView.swift; sourceTree = "<group>"; };
+		958B101961F6E5C44C835A63 /* ISSPassesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSPassesView.swift; sourceTree = "<group>"; };
+		98083A98736BA20EBE0B0FC8 /* ISSIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISSIconView.swift; sourceTree = "<group>"; };
+		98D6774387FA2CE7FA66B3DF /* ObservationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationDetailView.swift; sourceTree = "<group>"; };
+		9992B0C2A44FBE2D1A69CDC7 /* neptune.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = neptune.png; sourceTree = "<group>"; };
+		B4C2BB85DE07E4C23AB59D77 /* NewObservationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewObservationView.swift; sourceTree = "<group>"; };
+		B81CADF5635608C7C0289711 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
+		B97DB7D4DD31C60BA90327BD /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B99AFF554016DAC102CDA322 /* MoonPhaseCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonPhaseCalculator.swift; sourceTree = "<group>"; };
+		BB062B05B326DD6C4F403647 /* ObservationCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationCard.swift; sourceTree = "<group>"; };
+		BFA0A6E0F34C64F20C8C59AA /* sun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sun.png; sourceTree = "<group>"; };
+		C55E0AF2CFEB106D26BE9CAF /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		CD298A7EAB8E94F00FFA0D2C /* ObjectType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectType.swift; sourceTree = "<group>"; };
+		CD2DB0637D5A135D3A4418D7 /* astronomical_events_2026.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = astronomical_events_2026.json; sourceTree = "<group>"; };
+		D780284088ADFCEA645F211B /* BiometricService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricService.swift; sourceTree = "<group>"; };
+		DC366BD1755D35C1B0C1512C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		EAAA2FF217E681EE74BA637B /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		EECB7359BCDE778FF604EC29 /* EventsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewModel.swift; sourceTree = "<group>"; };
+		F7B589CBD30438E37D762D78 /* StatisticsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewModel.swift; sourceTree = "<group>"; };
+		FD1F914AF381F6D742409AF3 /* jupiter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jupiter.png; sourceTree = "<group>"; };
+		FE7E72999230E8BAF6A774D8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D6B9854B247D314998C8C03D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37CD404CF29AED06039B60F8 /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C3323C92913FDC28C3A8D33 /* Hardware */ = {
+			isa = PBXGroup;
+			children = (
+				D780284088ADFCEA645F211B /* BiometricService.swift */,
+				1442398952441A2D71B78E7F /* CameraService.swift */,
+				EAAA2FF217E681EE74BA637B /* LocationService.swift */,
+				1A38CE1DDF883538C04CC370 /* MotionService.swift */,
+			);
+			path = Hardware;
+			sourceTree = "<group>";
+		};
+		2CE8749C1A5198F0A10F8F4F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EECB7359BCDE778FF604EC29 /* EventsViewModel.swift */,
+				80CDCD8B383EF70575405285 /* HomeViewModel.swift */,
+				403035C10DE7BF6F5CB16418 /* ISSMapViewModel.swift */,
+				7EF4A1B93A536863D51A4ADA /* ISSPassesViewModel.swift */,
+				0F168BA3AA4EB662FB242158 /* SkyCompassViewModel.swift */,
+				F7B589CBD30438E37D762D78 /* StatisticsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		31E7BE78FD0CD8A90BCD0E75 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				07C0B1D05B47D5728C86247B /* AnimatedStarFieldView.swift */,
+				61E71166CB95CA6BFA7583C5 /* CameraCaptureView.swift */,
+				4577F260C15C8843EEBAB44F /* CelestialIcon.swift */,
+				56667EC99E69BF098086DC85 /* FallingStarsView.swift */,
+				98083A98736BA20EBE0B0FC8 /* ISSIconView.swift */,
+				BB062B05B326DD6C4F403647 /* ObservationCard.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		3F281D544B65F36E7E62DB89 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8D6FAD533E96E1ECDBAA2351 /* StarGazerApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		570EA07F14DC84FB0ED289F9 = {
+			isa = PBXGroup;
+			children = (
+				67F484170E1339285469BD25 /* Resources */,
+				C2A8A47018EC473FDD920E04 /* StarGazer */,
+				F126CD576DD99DB011C312EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		67F484170E1339285469BD25 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CD2DB0637D5A135D3A4418D7 /* astronomical_events_2026.json */,
+				291B459A355A35D5FE25C9D8 /* faceid_screen.png */,
+				4D192881D614A48DDE4F5C16 /* iss_icon.png */,
+				FD1F914AF381F6D742409AF3 /* jupiter.png */,
+				69F9EFBCBEE1FBE4D0A4168F /* mars.png */,
+				2DD4369050AC7860DD991296 /* mercury.png */,
+				232002BDC044A8780DE5756B /* moon.png */,
+				9992B0C2A44FBE2D1A69CDC7 /* neptune.png */,
+				0D17535530CCBD7A775E9B28 /* saturn.png */,
+				B81CADF5635608C7C0289711 /* splash.png */,
+				BFA0A6E0F34C64F20C8C59AA /* sun.png */,
+				4FACAF856396D53410495CAF /* uranus.png */,
+				7B4CC9E28C1A9CB32CE55135 /* venus.png */,
+				5706A7A5D31694CBF05D0202 /* yale_bright_star_catalog.csv */,
+			);
+			name = Resources;
+			path = StarGazer/Resources;
+			sourceTree = "<group>";
+		};
+		88E6CD7E0D8B6A510BA7B1C3 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8EFE590356BC15F1E1744544 /* ColorTheme.swift */,
+				FE7E72999230E8BAF6A774D8 /* Constants.swift */,
+				DC366BD1755D35C1B0C1512C /* Extensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		AE8AE6F12000697F2B06863A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2B6F71A2999B7B65D8512A1A /* Achievement.swift */,
+				82588DA5801775953B9932C3 /* APIModels.swift */,
+				11D7F9997812C8E9655A1584 /* CelestialBody.swift */,
+				CD298A7EAB8E94F00FFA0D2C /* ObjectType.swift */,
+				65685A73CF7DBD781CF76C63 /* Observation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B2244E6C9EEA4C17807E6639 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				1C676F931FE389253863C8CC /* ISSService.swift */,
+				2FB8ED5D5AB48A5999AD5CF8 /* SunriseSunsetService.swift */,
+				76AC281A6ACFC3F167C31172 /* WeatherService.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		C2A8A47018EC473FDD920E04 /* StarGazer */ = {
+			isa = PBXGroup;
+			children = (
+				05A54A1D0EEEA7E62AC912D6 /* Assets.xcassets */,
+				630D38E063ECC936D63BA1C0 /* Info.plist */,
+				3F281D544B65F36E7E62DB89 /* App */,
+				AE8AE6F12000697F2B06863A /* Models */,
+				E11266CA1B2EE06C0A55E5C8 /* Services */,
+				88E6CD7E0D8B6A510BA7B1C3 /* Utilities */,
+				2CE8749C1A5198F0A10F8F4F /* ViewModels */,
+				E915078F511E415CAF8FD1E9 /* Views */,
+			);
+			path = StarGazer;
+			sourceTree = "<group>";
+		};
+		E11266CA1B2EE06C0A55E5C8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B2244E6C9EEA4C17807E6639 /* API */,
+				0C3323C92913FDC28C3A8D33 /* Hardware */,
+				F7A8F4EFE1C62FF2C8E9C39F /* Local */,
+				F30A1F0128D14698AFD30431 /* System */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E915078F511E415CAF8FD1E9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7E015EB1CB6DD1751990EFB0 /* EventDetailView.swift */,
+				184C993D72FDF4FBEBC68A5C /* EventsCalendarView.swift */,
+				11E4F2CF5ED873A6E35B8FF9 /* HomeView.swift */,
+				56A3D7F04417A5D758B9D916 /* ISSMapView.swift */,
+				958B101961F6E5C44C835A63 /* ISSPassesView.swift */,
+				3BC01C740A7F21EE32107B9F /* LockView.swift */,
+				B4C2BB85DE07E4C23AB59D77 /* NewObservationView.swift */,
+				98D6774387FA2CE7FA66B3DF /* ObservationDetailView.swift */,
+				93B8371F3D2C6F35F479BC87 /* ObservationLogView.swift */,
+				22232AC98737556D5547A477 /* RootTabView.swift */,
+				B97DB7D4DD31C60BA90327BD /* SettingsView.swift */,
+				0CA96211CB0E43EC24C28586 /* SkyCompassView.swift */,
+				09E6F809814D201C210B51E5 /* SplashScreenView.swift */,
+				546D810FF3022B6225032244 /* StatisticsView.swift */,
+				31E7BE78FD0CD8A90BCD0E75 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F126CD576DD99DB011C312EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A7A8D9C2ACB3A886DE5E5BA /* StarGazer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F30A1F0128D14698AFD30431 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				82473D191B37C0FF37C932F7 /* AppLaunchState.swift */,
+				C55E0AF2CFEB106D26BE9CAF /* NotificationManager.swift */,
+				89FA7195A2B1CADBC09E6399 /* SettingsManager.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		F7A8F4EFE1C62FF2C8E9C39F /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				44BD01C2224528E1C0E98B31 /* AstronomicalEventsService.swift */,
+				0604B7F9D397644D645DE531 /* CelestialMath.swift */,
+				B99AFF554016DAC102CDA322 /* MoonPhaseCalculator.swift */,
+				24EA08C3A6F6CDC80E458EBD /* PlanetCalculator.swift */,
+				74A0868125D58F39F0C04B08 /* StarCatalogService.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		35640103AA1D675574E9E3CC /* StarGazer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EB1B6151A26594F60AC6895 /* Build configuration list for PBXNativeTarget "StarGazer" */;
+			buildPhases = (
+				B9CFBA68CD43185A94E28114 /* Sources */,
+				4615459FCEC874892999C61A /* Resources */,
+				D6B9854B247D314998C8C03D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StarGazer;
+			packageProductDependencies = (
+				4ADD8FE2D477245F6676624A /* Kingfisher */,
+			);
+			productName = StarGazer;
+			productReference = 1A7A8D9C2ACB3A886DE5E5BA /* StarGazer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9AD22952BCE8E621C8CCC59 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					35640103AA1D675574E9E3CC = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2C56905A08CE9B09B380D00A /* Build configuration list for PBXProject "StarGazer" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 570EA07F14DC84FB0ED289F9;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				678D6F5406D5CB31908E26F9 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = F126CD576DD99DB011C312EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				35640103AA1D675574E9E3CC /* StarGazer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4615459FCEC874892999C61A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB7BB8D10958B51F1287A3F8 /* Assets.xcassets in Resources */,
+				83C812DB897512705F9222F8 /* astronomical_events_2026.json in Resources */,
+				753DE777F3956EAB1E0D54A4 /* faceid_screen.png in Resources */,
+				E1C9C238D5DE82E2D6531C51 /* iss_icon.png in Resources */,
+				5E5E62420995E8D0E79C2347 /* jupiter.png in Resources */,
+				3C29ABE15FF4B45CBE53DCC5 /* mars.png in Resources */,
+				EA71A9D92B8E37E11D0689A6 /* mercury.png in Resources */,
+				33561E96A086709818057358 /* moon.png in Resources */,
+				C4A75998B5FCC6E926B0E84B /* neptune.png in Resources */,
+				36F7AFFDF86CE5E67A003A12 /* saturn.png in Resources */,
+				550354BF87C6F46E80B94F3E /* splash.png in Resources */,
+				32320003BED3CDD57044BEEA /* sun.png in Resources */,
+				9C42ACF50EC9C66D5EC0B8A8 /* uranus.png in Resources */,
+				C8F6DBA6300A338EDE135273 /* venus.png in Resources */,
+				5334116C552755F455303A4C /* yale_bright_star_catalog.csv in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B9CFBA68CD43185A94E28114 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66F0827CCCB14705834D20E5 /* APIModels.swift in Sources */,
+				BD55293702087FE540CB86DC /* Achievement.swift in Sources */,
+				49B2AE1F74E8CC9E876DCBC4 /* AnimatedStarFieldView.swift in Sources */,
+				6A9859AB546816C87A735683 /* AppLaunchState.swift in Sources */,
+				CAE071FD0C0927FE40730974 /* AstronomicalEventsService.swift in Sources */,
+				2F50D341EFB4D0FD9CA3FDF6 /* BiometricService.swift in Sources */,
+				967BA7AE54DA01F32FD1E511 /* CameraCaptureView.swift in Sources */,
+				1A337AA30DA91EBA1C0DA17F /* CameraService.swift in Sources */,
+				607BDA48806EAFBB86624EF7 /* CelestialBody.swift in Sources */,
+				BC756EB788D8F063A00C4D8C /* CelestialIcon.swift in Sources */,
+				40617AF5CD39CACD554BFCD1 /* CelestialMath.swift in Sources */,
+				F7138F2CBA0E72E25482CB24 /* ColorTheme.swift in Sources */,
+				2627E2567EC12E12CB315241 /* Constants.swift in Sources */,
+				99B70C25D33F54559484BAD5 /* EventDetailView.swift in Sources */,
+				4D81138EF39068F9B3F73E6A /* EventsCalendarView.swift in Sources */,
+				3064D5FB5AE76766A5B38DE3 /* EventsViewModel.swift in Sources */,
+				559D641791F6C9D4EA146A9D /* Extensions.swift in Sources */,
+				D70F488D8CE76EC51CA36B7E /* FallingStarsView.swift in Sources */,
+				C48AD4345B6102E9B8A76DAF /* HomeView.swift in Sources */,
+				FB3BE7C6D07DDEB2BABDFE30 /* HomeViewModel.swift in Sources */,
+				C3289A42872F3711B1F27066 /* ISSIconView.swift in Sources */,
+				9A539DA7F891E933EB457E55 /* ISSMapView.swift in Sources */,
+				6FF9A4EC685BF44517215404 /* ISSMapViewModel.swift in Sources */,
+				4C3781649F145B8A68588D1E /* ISSPassesView.swift in Sources */,
+				35F4207262794F50FB4B6960 /* ISSPassesViewModel.swift in Sources */,
+				B172F5090E23AC0F17778E1C /* ISSService.swift in Sources */,
+				8B6805B9926ADAB445DB2B44 /* LocationService.swift in Sources */,
+				A83B1F592DEF9DE2D4974B9B /* LockView.swift in Sources */,
+				E77D447FCA424BA0613A016A /* MoonPhaseCalculator.swift in Sources */,
+				AF757E37E2437F2ECBE5519F /* MotionService.swift in Sources */,
+				56020962BC62A8D1BB3A962D /* NewObservationView.swift in Sources */,
+				979A60C39DFCE8F56A44D470 /* NotificationManager.swift in Sources */,
+				0FCF0A3B31F272BE8863C763 /* ObjectType.swift in Sources */,
+				5126ACF0CCBAAFE50E886D2C /* Observation.swift in Sources */,
+				C78437DB48A360FE1253191F /* ObservationCard.swift in Sources */,
+				C9593657665A0C46A4C4F9AA /* ObservationDetailView.swift in Sources */,
+				D0EBF644C45A112E2066C3D1 /* ObservationLogView.swift in Sources */,
+				7D3B536A78927262EB2CF885 /* PlanetCalculator.swift in Sources */,
+				0C00DD11E63736CF64DD1647 /* RootTabView.swift in Sources */,
+				53CF6A548F9C6145F5D1C307 /* SettingsManager.swift in Sources */,
+				BEA5F7803B2F66C55682061B /* SettingsView.swift in Sources */,
+				34B67078A32B4AF63AD55588 /* SkyCompassView.swift in Sources */,
+				76F097555170B8E8B1028E90 /* SkyCompassViewModel.swift in Sources */,
+				EAF10B06180E43F192C54BBA /* SplashScreenView.swift in Sources */,
+				6B06A3D893590FDD967D7206 /* StarCatalogService.swift in Sources */,
+				BCC16BEC2F3E2D6F6736AEF4 /* StarGazerApp.swift in Sources */,
+				7406DB1789C18AE243DD8322 /* StatisticsView.swift in Sources */,
+				68057ED454219E1F968729BF /* StatisticsViewModel.swift in Sources */,
+				F9D0FB61D67E6CF8C8DBB216 /* SunriseSunsetService.swift in Sources */,
+				0945771EC13DD0F1A8781097 /* WeatherService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		02B2E075794C1112C10AE058 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5D45A4892ECABB3C9160FA58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = W795FRSF8A;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = StarGazer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stargazer.StarGazer;
+				PRODUCT_NAME = StarGazer;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6343DEF8302AE8A29CF61128 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		DC6C24343898DB563D3C3811 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = W795FRSF8A;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = StarGazer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stargazer.StarGazer;
+				PRODUCT_NAME = StarGazer;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C56905A08CE9B09B380D00A /* Build configuration list for PBXProject "StarGazer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02B2E075794C1112C10AE058 /* Debug */,
+				6343DEF8302AE8A29CF61128 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8EB1B6151A26594F60AC6895 /* Build configuration list for PBXNativeTarget "StarGazer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D45A4892ECABB3C9160FA58 /* Debug */,
+				DC6C24343898DB563D3C3811 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		678D6F5406D5CB31908E26F9 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4ADD8FE2D477245F6676624A /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 678D6F5406D5CB31908E26F9 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B9AD22952BCE8E621C8CCC59 /* Project object */;
+}
